@@ -1,0 +1,51 @@
+/* :root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+    user-select: none;
+} */
+body{
+    user-select: none;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+#gridBox{
+    user-select: none;
+    height: 550px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cellBox{
+    user-select: none;
+    border: solid 1px greenyellow;
+    display: grid;
+    grid-gap: 0em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    flex-shrink: 1;
+}
+.cell{
+    user-select: none;
+    border: solid 1px gray;
+    padding: 1em;
+    text-align: center;
+    background-color: white;
+    gap: 1px;
+    display: flex;
+}
+.cellblack{
+    user-select: none;
+    padding: 1em;
+    text-align: center;
+    background-color:black;
+    border: solid 1px black;
+}
